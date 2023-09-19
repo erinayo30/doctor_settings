@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/349ccceb36.js" crossorigin="anonymous"></script>
+    <title> Doctor Dashboard Settings</title>
+</head>
+<body>
+    <!-- Search Bar Section -->
+    <div class="box-border bg-[#D9D9D9] h-10 w-450 m-4 float-right flex flex-row gap-6 border-none rounded-2xl content-center">
+        <input type="text" placeholder="Search" class=" float-left border-none rounded-2xl w-200 h-10 p-0"><button type="onsubmit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+         <a href=""><i class="fa-solid fa-moon content-center pt-3" ></i></a>
+        <img src="pic_1.jpg" alt="" class=" h-10 w-15 rounded-3xl content-center"></i>
+        <a href=""><i class="fa-solid fa-house content-center p-3"></i></a>
+    </div>
+    <br>
+    <!-- Side Bar -->
+    <div class="bg-[#FFFFFF] leading-10 drop-shadow-md h-100% w-200 fixed z-10 left-0 top-0 truncate p-4 m-4 hover-[#26335D]">
+        <div>
+        <img src="logo.jpg" alt="App Logo" class=" h-30 w-20 static">
+        <h2 class="font-bold bg-[#26335D] mb-5 rounded-2xl text-white text-center hover:bg-[#FC724D] hover:text-white" href="settings.html"></a><i class="fa-solid fa-gear bg-[ffffff]"></i> SETTINGS</a></h2>
+            <div id="" class="">
+            <h3 class="bg-[#FC724D] font-bold text-white no-under line hover:bg-[#FC724D] hover:text-white block"> <a href=""><i class="fa-solid fa-user"></i> Personal Information</a></h3>
+            <h3 class="no-underline font-bold block hover:bg-[#FC724D] hover:text-white"> <a href="chat.html"><i class="fa-solid fa-message"></i> Chat</a></h3>
+            <h3 class="no-underline font-bold block hover:bg-[#FC724D] hover:text-white"> <a href="appointment.html"><i class="fa-solid fa-pen-to-square"></i> Appointment</a></h3>
+            <h3 class="no-underline font-bold block hover:bg-[#FC724D] hover:text-white"> <a href="reminder.html"><i class="fa-solid fa-bell"></i> Reminder</a></h3>
+            <h3 class="no-underline font-bold block hover:bg-[#FC724D] hover:text-white"> <a href="password.html"><i class="fa-solid fa-lock"></i> Password And Security</a></h3> 
+            <h3 class="no-underline font-bold block hover:bg-[#FC724D] hover:text-white"> <a href="help.html"><i class="fa-solid fa-circle-info"></i> Help </a></h3>     
+            
+            <button class="bg-[#26335D] rounded-xl p-3 m-4 text-white float-right hover:bg-[#FC724D] hover:text-white">Log Out   <i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+         </div>
+    </div>
+      <!-- Profile Image -->
+      <div id="profile" class="bg-[#D9D9D9] left-50 top-50 float-right rounded-5xl">
+        <img src="pic_1.jpg" alt="" class=" h-auto max-w-full rounded-full top-50 max-h-60 max-w-3xl rounded-3xl object-scale-down h-48 w-96" > <button onclick="profile()" class="float-left"> <i class="fa-solid fa-camera"></i></button>
+      <input type="text" placeholder="Doctor's Name" class="rounded-2xl">
+        <!-- <img src="pic_1.jpg" alt="My Doctor" class="top-50 align-middle bg-[#D9D9D9] left-50 h-50 w-50 float-right rounded-50%"> -->
+    </div>
+
+    
+    <!-- Personal Details -->
+        <div class=" box-border left-50 top-50" id="inputField">
+            <form action="" class="flex flex-col justify-center items-center w-100% p-4">
+                <label class="block" for="Doctor_ID" >Doctor ID</label>
+                <input type="text" id="userId" placeholder="User ID" class="bg-[#D9D9D9] rounded-xl" required><br>
+                <label class="block" for="licenseNumber"  >License No</label>
+                <input type="text" id="licenseNumber" class="bg-[#D9D9D9] rounded-xl  placeholder="License Number" required><br>
+                <label class="block" for="name">First Name</label>
+                <input type="text" id="firstName" class="bg-[#D9D9D9] rounded-xl" placeholder="First Name"><br>
+                <label class="block" for="name">Other Name</label>
+                <input type="text" id="otherName" class="bg-[#D9D9D9] rounded-xl" placeholder="Other Name"><br>
+                <label class="block" for="name">Last Name</label>
+                <input type="text" id="lastName" class="bg-[#D9D9D9] rounded-xl" placeholder="Last Name"><br>
+                <label class="block" for="name">Speciality</label>
+                <input type="text" id="Speciality" class="bg-[#D9D9D9] rounded-xl" placeholder="Speciality"><br>
+                <label class="block" for="name">Email</label>
+                <input type="email" id="email" class="bg-[#D9D9D9] rounded-xl" placeholder="Email"><br>
+                <label class="block" for="number">Phone Number</label>
+                <input type="number" id="phoneNumber" class="bg-[#D9D9D9] rounded-xl" placeholder="Phone Number"><br>
+            </form>
+
+        <button onsubmit="update()" class=" bg-[#26335D] rounded-2xl p-4 m-4 text-white float-right hover:bg-[#FC724D] hover:text-white" >UPDATE</button>
+            
+        </div>
+   
+     
+    
+    
+</body>
+</html>
