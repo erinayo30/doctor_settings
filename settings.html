@@ -1,243 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/349ccceb36.js"
       crossorigin="anonymous"
     ></script>
-    <title>Doctor Dashboard Settings</title>
-  </head>
-  <body>
-    <div class="flex gap-6 w-[100%]">
-      <!-- Side Bar -->
-      <div
-        class="w-[20%] bg-[#FFFFFF] shadow-lg shadow-[#000] p-4 flex flex-col gap-16"
-      >
-        <div class="flex flex-col gap-6">
-          <img src="logo.jpg" alt="App Logo" class="h-30 w-20" />
-          <div class="flex flex-col gap-4">
-            <h2
-              class="font-bold bg-[#26335D] rounded-md text-white p-3 hover:bg-[#FC724D] hover:text-white"
-            >
-              <a href="settings.html" class="flex gap-4 items-center p-3">
-                <p><i class="fa-solid fa-gear bg-[ffffff]"></i></p>
-                <p>SETTINGS</p>
-              </a>
-            </h2>
-            <h3
-              class="font-bold rounded-md p-3 hover:bg-[#FC724D] hover:text-white"
-            >
-              <a href="" class="flex gap-4 items-center">
-                <p class="text-[#FC724D]"><i class="fa-solid fa-user"></i></p>
-                <p>Personal Information</p>
-              </a>
-            </h3>
-            <h3
-              class="no-underline p-3 font-bold hover:bg-[#FC724D] hover:text-white rounded-md"
-            >
-              <a href="chat.html" class="flex gap-4 item-center">
-                <p class="text-[#FC724D]">
-                  <i class="fa-solid fa-message"></i>
-                </p>
-                <p>Chat</p>
-              </a>
-            </h3>
-            <h3
-              class="no-underline p-3 font-bold hover:bg-[#FC724D] hover:text-white rounded-md"
-            >
-              <a href="appointment.html" class="flex gap-4 item-center">
-                <p class="text-[#FC724D]">
-                  <i class="fa-solid fa-pen-to-square"></i>
-                </p>
-                <p>Appointment</p>
-              </a>
-            </h3>
-            <h3
-              class="no-underline p-3 font-bold hover:bg-[#FC724D] hover:text-white rounded-md"
-            >
-              <a href="reminder.html" class="flex gap-4 item-center">
-                <p class="text-[#FC724D]"><i class="fa-solid fa-bell"></i></p>
-                <p>Reminder</p>
-              </a>
-            </h3>
-            <h3
-              class="no-underline p-3 font-bold hover:bg-[#FC724D] hover:text-white rounded-md"
-            >
-              <a href="password.html" class="flex gap-4 item-center">
-                <p class="text-[#FC724D]"><i class="fa-solid fa-lock"></i></p>
-                <p>Password And Security</p>
-              </a>
-            </h3>
-            <h3
-              class="no-underline p-3 font-bold hover:bg-[#FC724D] hover:text-white rounded-md"
-            >
-              <a href="help.html" class="flex item-center gap-4">
-                <p class="text-[#FC724D]">
-                  <i class="fa-solid fa-circle-info"></i>
-                </p>
-                <p>Help</p>
-              </a>
-            </h3>
-          </div>
-        </div>
-        <button
-          class="font-bold text-[24px] hover:text-[#FC724D] cursor-pointer"
-        >
-          Log Out
-          <i class="fa-solid fa-right-from-bracket"></i>
-        </button>
-      </div>
-
-      <!-- section 2 -->
-      <div class="w-[80%] flex flex-col gap-16 p-8">
-          <!-- Search Bar Section -->
-        <div class="flex gap-6 item-center justify-center">
-          <div class="flex bg-[#D9D9D9] rounded-full">
-            <input
-              type="text"
-              placeholder="Search"
-              class="p-2 drop-shadow-md border-2 rounded-full"
-            />
-            <div class="bg-[#D9D9D9] rounded-full">
-              <div class="flex gap-2 item-center p-2">
-                <p class="text-[30px] text-center">
-                  <i class="fa-solid fa-moon"></i>
-                </p>
-                <img
-                  src="pic_1.jpg"
-                  alt=""
-                  class="h-[50px] w-[50px] rounded-full"
-                />
-              </div>
-            </div>
-          </div>
-          <p class="text-[40px]">
-            <i class="fa-solid fa-house"></i>
-          </p>
-        </div>
-
-        <div class="flex justify-center p-4 gap-32">
-          <!-- Personal Details -->
-          <div class="p-4" id="inputField">
-            <form action="" class="flex flex-col gap-6">
-              <div class="">
-                <label class="text-[20px] block" for="Doctor_ID"
-                  >Doctor ID</label
-                >
-                <input
-                  type="text"
-                  id="userId"
-                  placeholder="User ID"
-                  class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D]"
-                  required
-                />
-              </div>
-              <div class="">
-                <label class="text-[20px] block" for="licenseNumber"
-                  >License No</label
-                >
-                <input
-                  type="text"
-                  id="licenseNumber"
-                  class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D]"
-                  placeholder="License Number"
-                  required
-                />
-              </div>
-              <div class="">
-                <label class="text-[20px] block" for="name">First Name</label>
-                <input
-                  type="text"
-                  id="firstName"
-                  class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D]"
-                  placeholder="First Name"
-                />
-              </div>
-              <div class="">
-                <label class="text-[20px] block" for="name">Other Name</label>
-                <input
-                  type="text"
-                  id="otherName"
-                  class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D]"
-                  placeholder="Other Name"
-                />
-              </div>
-              <div class="">
-                <label class="text-[20px] block" for="name">Last Name</label>
-                <input
-                  type="text"
-                  id="lastName"
-                  class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D]"
-                  placeholder="Last Name"
-                />
-              </div>
-              <div class="">
-                <label class="text-[20px] block" for="name">Speciality</label>
-                <input
-                  type="text"
-                  id="speciality"
-                  class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D]"
-                  placeholder="Speciality"
-                />
-              </div>
-              <div class="">
-                <label class="text-[20px] block" for="name">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D]"
-                  placeholder="Email"
-                />
-              </div>
-              <div class="">
-                <label class="text-[20px] block" for="number"
-                  >Phone Number</label
-                >
-                <input
-                  type="number"
-                  id="phoneNumber"
-                  class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D]"
-                  placeholder="Phone Number"
-                />
-              </div>
-            </form>
-          </div>
-          <!-- Profile Image -->
-          <div class="flex flex-col justify-between gap-[36rem] item-center">
-            <div id="profile" class="flex flex-col items-center gap-4">
-              <div class="relative bg-[#A5ADD7] rounded-full p-10">
-                <div class="">
-                  <img
-                    src="pic_1.jpg"
-                    alt=""
-                    class="h-20 w-20 rounded-full border-2 border-black"
-                  />
+    <title>BitMedics | Doctor's-Settings</title>
+</head>
+<body>
+    <main class="flex gap-6 w-[100%] ">
+              <!-- Side Bar -->
+              <div
+                class="hidden lg:flex  w-[20%] bg-[#FFFFFF] shadow-lg shadow-[#000] p-4 flex flex-col gap-16 sticky"
+              >
+                <div class="flex flex-col gap-6 sm:mx-auto">
+                  <img src="/logo.jpg" alt="App Logo" class="h-[150px] w-[150px] sm:shrink-0" />
+                  <div class="flex flex-col gap-4">
+                    <h2
+                      class="font-bold bg-[#26335D] rounded-md text-white p-3 hover:bg-[#FC724D] hover:text-white"
+                    >
+                      <a href="settings.html" class="flex gap-4 items-center">
+                        <p><i class="fa-solid fa-gear bg-[ffffff]"></i></p>
+                        <p>SETTINGS</p>
+                      </a>
+                    </h2>
+                    <h3
+                      class="font-bold rounded-md p-3 hover:bg-[#FC724D] hover:text-white"
+                    >
+                      <a href="#personalInfo.html" class="flex gap-4 items-center">
+                        <p class="text-[#FC724D]"><i class="fa-solid fa-user"></i></p>
+                        <p>Personal Information</p>
+                      </a>
+                    </h3>
+                    <h3
+                      class="no-underline p-3 font-bold hover:bg-[#FC724D] hover:text-white rounded-md"
+                    >
+                      <a href="#chat.html" class="flex gap-4 item-center">
+                        <p class="text-[#FC724D]">
+                          <i class="fa-solid fa-message"></i>
+                        </p>
+                        <p>Chat</p>
+                      </a>
+                    </h3>
+                    <h3
+                      class="no-underline p-3 font-bold hover:bg-[#FC724D] hover:text-white rounded-md"
+                    >
+                      <a href="#appointment.html" class="flex gap-4 item-center">
+                        <p class="text-[#FC724D]">
+                          <i class="fa-solid fa-pen-to-square"></i>
+                        </p>
+                        <p>Appointment</p>
+                      </a>
+                    </h3>
+                    <h3
+                      class="no-underline p-3 font-bold hover:bg-[#FC724D] hover:text-white rounded-md"
+                    >
+                      <a href="#reminder.html" class="flex gap-4 item-center">
+                        <p class="text-[#FC724D]"><i class="fa-solid fa-bell"></i></p>
+                        <p>Reminder</p>
+                      </a>
+                    </h3>
+                    <h3
+                      class="no-underline p-3 font-bold hover:bg-[#FC724D] hover:text-white rounded-md"
+                    >
+                      <a href="#password.html" class="flex gap-4 item-center">
+                        <p class="text-[#FC724D]"><i class="fa-solid fa-lock"></i></p>
+                        <p>Password Settings</p>
+                      </a>
+                    </h3>
+                    <h3
+                      class="no-underline p-3 font-bold hover:bg-[#FC724D] hover:text-white rounded-md"
+                    >
+                      <a href="#help.html" class="flex item-center gap-4">
+                        <p class="text-[#FC724D]">
+                          <i class="fa-solid fa-circle-info"></i>
+                        </p>
+                        <p>Help</p>
+                      </a>
+                    </h3>
+                  </div>
                 </div>
                 <button
-                  onclick="profile()"
-                  class="absolute text-[16px] left-32 bottom-10"
+                  class="font-bold text-[24px] hover:text-[#FC724D] cursor-pointer"
                 >
-                  <i class="fa-solid fa-camera"></i>
+                  Log Out
+                  <i class="fa-solid fa-right-from-bracket"></i>
                 </button>
               </div>
-              <p class="bg-[#D9D9D9] p-2 rounded-md w-[150px] text-center">
-                Dr. Zubaidat
-              </p>
-            </div>
-            <button
-              onsubmit="update(event)"
-              class="bg-[#26335D] text-white font-bold p-2 w-[150px] rounded-full hover:bg-[#FC724D]"
-            >
-              UPDATE
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+        
+              <!-- section 2 -->
+              <div class="lg:w-[80%] flex flex-col gap-5 p-8">
+                <!-- search Bar -->
+                <div class="flex justify-around p-3">
+                  <div
+                    class="flex border-2 border-solid border-[#040641] rounded-full px-[8px] py-[10px] items-center"
+                  >
+                    <div>
+                      <input type="search"
+                        placeholder="Quick Search"
+                        class="text-[#040641] border-none outline-none w-[450px] px-2"
+                      />
+                      <button class="px-2 hover:text-[#FC724D]">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-6">
+                    <p class="text-[32px] hover:text-[#FC724D] cursor-pointer">
+                      <i class="fa-solid fa-house"></i>
+                    </p>
+                  </div>
+                </div>
+        
+                <div class=" flex flex-col justify-center p-4 lg:gap-16 lg:flex-row">
+                  <!-- Personal Details -->
+                  <div class="p-4" id="inputField">
+                    <form action="" class="flex flex-col gap-6">
+                      <div class="">
+                        <label class="text-[20px] block" for="Doctor_ID"
+                          >Doctor ID</label
+                        >
+                        <input
+                          type="text"
+                          id="userId"
+                          placeholder="User ID"
+                          class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D] focus:bg-white"
+                          required
+                        />
+                      </div>
+                      <div class="">
+                        <label class="text-[20px] block" for="licenseNumber"
+                          >License No</label
+                        >
+                        <input
+                          type="text"
+                          id="licenseNumber"
+                          class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D] focus:bg-white"
+                          placeholder="License Number"
+                          required
+                        />
+                      </div>
+                      <div class="">
+                        <label class="text-[20px] block" for="name">First Name</label>
+                        <input
+                          type="text"
+                          id="firstName"
+                          class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D] focus:bg-white"
+                          placeholder="First Name"
+                        />
+                      </div>
+                      <div class="">
+                        <label class="text-[20px] block" for="name">Other Name</label>
+                        <input
+                          type="text"
+                          id="otherName"
+                          class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D] focus:bg-white"
+                          placeholder="Other Name"
+                        />
+                      </div>
+                      <div class="">
+                        <label class="text-[20px] block" for="name">Last Name</label>
+                        <input
+                          type="text"
+                          id="lastName"
+                          class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D] focus:bg-white"
+                          placeholder="Last Name"
+                        />
+                      </div>
+                      <div class="">
+                        <label class="text-[20px] block" for="name">Speciality</label>
+                        <input
+                          type="text"
+                          id="speciality"
+                          class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D] focus:bg-white"
+                          placeholder="Speciality"
+                        />
+                      </div>
+                      <div class="">
+                        <label class="text-[20px] block" for="name">Email</label>
+                        <input
+                          type="email"
+                          id="email"
+                          class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D] focus:bg-white"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="">
+                        <label class="text-[20px] block" for="number"
+                          >Phone Number</label
+                        >
+                        <input
+                          type="number"
+                          id="phoneNumber"
+                          class="bg-[#D9D9D9] p-2 w-[350px] outline-none focus:outline-[#FC724D] focus:bg-white"
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Profile Image -->
+                  <div class="flex flex-col justify-between lg:gap-[36rem] item-center">
+                    <div id="profile" class="flex flex-col items-center gap-4">
+                      <div class="relative bg-[#A5ADD7] rounded-full p-10">
+                        <div class="">
+                          <img
+                            src="/pic_1.jpg"
+                            alt=""
+                            class="h-20 w-20 rounded-full border-2 border-black"
+                          />
+                        </div>
+                        <button
+                          onclick="profile()"
+                          class="absolute text-[16px] left-32 bottom-10"
+                        >
+                          <i class="fa-solid fa-camera"></i>
+                        </button>
+                      </div>
+                      <p class="bg-[#D9D9D9] p-2 rounded-md w-[150px] text-center">
+                        Dr. Zubaidat
+                      </p>
+                    </div>
+                    <button
+                    onsubmit="update(event)"
+                    class="bg-[#26335D] text-white font-bold p-2 w-[150px] rounded-full hover:bg-[#FC724D]"
+                  >
+                    UPDATE
+                  </button>
+                  </div>
+                </div>
+                <div class="">
 
-    <script src="script.js"></script>
-  </body>
+                </div>
+              
+              
+              </div>
+            </div>
+          
+            <script src="/settingScript.js"></script>
+    </main>
+</body>
 </html>
